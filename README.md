@@ -33,3 +33,6 @@ JAVAX validation for JAXB Genrated bean (as per above xsd)
 	9.1234567890 (VALID)
 	11.123456789 (INVALID)
 	
+	For More Information , refer Junit test file "XsdObjectValidateTest"
+
+	
