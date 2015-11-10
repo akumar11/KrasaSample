@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:trv="urn:srv.travel.com:domain:travel:v1_0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:srv.travel.com:domain:travel:v1_0"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	version="1">
+	<xs:element name="TravelInfoCollection" type="trv:travelInfoCollection">
+	</xs:element>
+	<xs:complexType name="travelInfoCollection">
+		<xs:sequence>
+			<xs:element name="travelInfoData" type="trv:travelInfoData" maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="travelInfoData">
+		<xs:sequence>
+			<xs:element name="distance" type="trv:max11decimalvalue" />
+			<xs:element name="travelMode" type="trv:travelMode" />
+			<xs:element name="destination" type="trv:AlphaNumericmin1max10" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="max11decimalvalue">
+		<xs:restriction base="xs:decimal">
+			<xs:fractionDigits value="10">
+			</xs:fractionDigits>
+			<xs:totalDigits value="11"></xs:totalDigits>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AlphaNumericmin1max10">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[a-zA-Z0-9]{1,10}"></xs:pattern>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="travelMode">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ROAD" />
+			<xs:enumeration value="AIR" />
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

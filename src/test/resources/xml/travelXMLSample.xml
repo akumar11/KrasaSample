@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trv:TravelInfoCollection xmlns:trv="urn:srv.travel.com:domain:travel:v1_0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<trv:travelInfoData>
+	<trv:distance>1.1234567890</trv:distance>
+	<trv:travelMode>ROAD</trv:travelMode>
+	<trv:destination>Alaska</trv:destination>
+	</trv:travelInfoData>
+	
+	<trv:travelInfoData>
+	<trv:distance>9.1234567890</trv:distance>
+	<trv:travelMode>ROAD</trv:travelMode>
+	<trv:destination>Alaska</trv:destination>
+	</trv:travelInfoData>
+	
+	<trv:travelInfoData>
+	<trv:distance>11.123456789</trv:distance>
+	<trv:travelMode>ROAD</trv:travelMode>
+	<trv:destination>Alaska</trv:destination>
+	</trv:travelInfoData>
+	
+</trv:TravelInfoCollection>
