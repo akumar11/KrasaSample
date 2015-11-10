@@ -3,13 +3,13 @@ Sample for Krasa JAXB validation
 
 Issue is with following XSD defination (travel.xsd)
 
-<xs:simpleType name="max11decimalvalue">
+ < xs:simpleType name="max11decimalvalue">
 		<xs:restriction base="xs:decimal">
 			<xs:fractionDigits value="10">
 			</xs:fractionDigits>
 			<xs:totalDigits value="11"></xs:totalDigits>
 		</xs:restriction>
-	</xs:simpleType>
+	< /xs:simpleType>
 	
 JAVAX validation for JAXB Genrated bean (as per above xsd)
 
