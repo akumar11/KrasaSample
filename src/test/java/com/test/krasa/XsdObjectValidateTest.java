@@ -34,8 +34,8 @@ public class XsdObjectValidateTest {
 	/**
 	 * XSD And Test XML Locations
 	 */
-	String XSD_PATH = "src\\main\\resources\\xsd\\travel.xsd";
-	String XML_PATH = "src\\test\\resources\\xml\\travelXMLSample.xml";
+	String XSD_PATH = "src/main/resources/xsd/travel.xsd";
+	String XML_PATH = "src/test/resources/xml/travelXMLSample.xml";
 
 	BigDecimal DISTANCE_1 = new BigDecimal("1.1234567890");
 	BigDecimal DISTANCE_2 = new BigDecimal("9.1234567890");
