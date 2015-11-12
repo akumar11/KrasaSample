@@ -19,7 +19,7 @@ javax.validation.constraints.Digits in JAXB Genrated bean (as per above xsd)
 	
 	
 ===========================================================================
-	Data Validations :
+Data Validations
 ===========================================================================
 	a) For XSD and XML Data validation Following Data Combination are valid/invalid :
 	
