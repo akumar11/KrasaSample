@@ -21,15 +21,15 @@ javax.validation.constraints.Digits in JAXB Genrated bean (as per above xsd)
 ===========================================================================
 Data Validations
 ===========================================================================
-	a) For XSD and XML Data validation Following Data Combination are valid/invalid :
+	a) For XSD and XML Data validation , following Data Combination are valid/invalid :
 	
 	<trv:distance>1.1234567890</trv:distance> (VALID)
 	
 	<trv:distance>9.1234567890</trv:distance> (VALID)
 	
-	<trv:distance>9.1234567890</trv:distance> (VALID)
+	<trv:distance>11.123456789</trv:distance> (VALID)
     
-	b) For JAXB Generated Bean validation Following Data Combination are valid/invalid
+	b) For JAXB Generated Bean validation , following Data Combination are valid/invalid
      
 	1.1234567890 (VALID)
 	9.1234567890 (VALID)
