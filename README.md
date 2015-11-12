@@ -1,9 +1,10 @@
 # KrasaSample
-Sample for Krasa JAXB validation
+Sample of Krasa JAXB Tool for demoing the issue with genratated javax.validation.constraints.Digits annotation.
 
-Issue is with following XSD defination (travel.xsd)
-
- < xs:simpleType name="max11decimalvalue">
+===============================================
+XSD defination (travel.xsd)
+==============================================
+        < xs:simpleType name="max11decimalvalue" >
  
 		< xs:restriction base="xs:decimal">
 			< xs:fractionDigits value="10">
@@ -11,25 +12,26 @@ Issue is with following XSD defination (travel.xsd)
 			< xs:totalDigits value="11">< /xs:totalDigits>
 		< /xs:restriction>
 	< /xs:simpleType>
-	
-JAVAX validation for JAXB Genrated bean (as per above xsd)
-
+===========================================================================
+javax.validation.constraints.Digits in JAXB Genrated bean (as per above xsd)
+===========================================================================
  @Digits(integer = 1, fraction = 10)
 	
 	
+	===========================================================================
 	Data Validations :
 	
-	
-	For XML Data validation Following Data Combination are valid/invalid :
+	===========================================================================
+	For XSD and XML Data validation Following Data Combination are valid/invalid :
 	
 	<trv:distance>1.1234567890</trv:distance> (VALID)
 	
 	<trv:distance>9.1234567890</trv:distance> (VALID)
 	
 	<trv:distance>9.1234567890</trv:distance> (VALID)
-	
+     =====================================================================================
 	And For JAXB Generated Bean validation Following Data Combination are valid/invalid
-	
+     =====================================================================================
 	1.1234567890 (VALID)
 	9.1234567890 (VALID)
 	11.123456789 (INVALID)
